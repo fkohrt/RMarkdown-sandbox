@@ -1,6 +1,0 @@
----
-title: "Tint Is Not Tufte"
-output: tint::tintPdf
----
-
-Test
