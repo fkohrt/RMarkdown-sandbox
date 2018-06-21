@@ -10,4 +10,4 @@ Who provides what?
 - Hardware: [Google Cloud](https://cloud.google.com/) ([source](https://mybinder-sre.readthedocs.io/en/latest/deployment/what.html)), [GitHub](https://github.com/)
 - Money: [Moore Foundation](https://figshare.com/s/e9d0ad7bdc4e405cccfa) ([source](https://mybinder.readthedocs.io/en/latest/faq.html#how-can-mybinder-org-be-free-to-use))
 
-[more info]([mybinder.org-deploy](https://github.com/jupyterhub/mybinder.org-deploy))
+[more info](https://github.com/jupyterhub/mybinder.org-deploy)
