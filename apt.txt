@@ -10,3 +10,4 @@ texlive-latex-recommended
 texlive-pictures
 dvipng
 ghostscript
+texinfo
