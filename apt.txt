@@ -12,3 +12,4 @@ texlive-pictures
 dvipng
 ghostscript
 texinfo
+libv8-3.14-dev
