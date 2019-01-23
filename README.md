@@ -1,6 +1,6 @@
 # R Markdown sandbox
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fkohrt/RMarkdown-tint/master?urlpath=rstudio)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fkohrt/RMarkdown-sandbox/master?urlpath=rstudio)
 
 Amazing: With the push of a button, you make use of so many different technologies and ideas!
 
