@@ -8,3 +8,4 @@ install.packages("tint")
 
 install.packages("revealjs")
 install.packages("tikzDevice")
+install.packages("DiagrammeR")
