@@ -1,4 +1,4 @@
-# R Markdown + tint
+# R Markdown sandbox
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/fkohrt/RMarkdown-tint/master?urlpath=rstudio)
 
