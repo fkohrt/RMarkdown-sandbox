@@ -1,6 +1,8 @@
 ---
 title: "Drawing inside reveal.js presentations"
+always_allow_html: yes
 output:
+  tint::tintPdf: default
   revealjs::revealjs_presentation:
     theme: serif
     transition: slide
@@ -269,31 +271,36 @@ output:
 
 ## DiagrammeR
 
-```{r results="asis", echo=FALSE}
-cat("
-<style>
-.DiagrammeR {
-  font-size: 0.5em!important;
+```{r, echo=FALSE}
+# https://mikeyharper.uk/flowcharts-in-r-using-diagrammer/
+img.d<-"digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, fillcolor = Linen]
+
+data1 [label = 'Dataset 1', shape = folder, fillcolor = Beige]
+data2 [label = 'Dataset 2', shape = folder, fillcolor = Beige]
+process [label =  'Process \n Data']
+statistical [label = 'Statistical \n Analysis']
+results [label= 'Results']
+
+# edge definitions with the node IDs
+{data1 data2}  -> process -> statistical -> results
+}"
+if (knitr:::is_latex_output()) {
+  img.d2 <- DiagrammeR::grViz(img.d)
+  tmp<-capture.output(rsvg::rsvg_png(charToRaw(DiagrammeRsvg::export_svg(img.d2)),'img.png'))
+  knitr::include_graphics('img.png')
+} else {
+  DiagrammeR::grViz(img.d)
 }
-</style>
-")
+
 ```
 
-```{r, echo = FALSE, cache=TRUE}
-DiagrammeR::mermaid("
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts prevail...
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-", height = 600)
-```
+## More GraphViz Links
+- [cannot output any DiagrammeR graph to a pdf file through knitr](https://github.com/rich-iannone/DiagrammeR/issues/133)
 
 ## More reveal.js Links
 - [R Markdown documentation](https://bookdown.org/yihui/rmarkdown/revealjs.html)
