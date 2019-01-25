@@ -300,6 +300,7 @@ if (knitr:::is_latex_output()) {
 ```
 
 ## More GraphViz Links
+- [GraphViz Pocket Reference](https://graphs.grevian.org/)
 - [cannot output any DiagrammeR graph to a pdf file through knitr](https://github.com/rich-iannone/DiagrammeR/issues/133)
 
 ## More reveal.js Links
