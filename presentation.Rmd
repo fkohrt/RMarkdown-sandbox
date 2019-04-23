@@ -271,7 +271,7 @@ output:
 
 ## DiagrammeR
 
-```{r, echo=FALSE, fig.cap = NULL, fig.env = "@empty"}
+```{r, echo=FALSE, fig.cap = NULL, fig.env = "@empty", out.width="100%"}
 # https://mikeyharper.uk/flowcharts-in-r-using-diagrammer/
 img.d<-"digraph {
 
@@ -291,7 +291,7 @@ results [label= 'Results']
 }"
 if (knitr:::is_latex_output()) {
   img.d2 <- DiagrammeR::grViz(img.d)
-  tmp<-capture.output(rsvg::rsvg_png(charToRaw(DiagrammeRsvg::export_svg(img.d2)),'img.png'))
+  tmp<-capture.output(rsvg::rsvg_png(charToRaw(DiagrammeRsvg::export_svg(img.d2)),'img.png', width=2000))
   knitr::include_graphics('img.png')
 } else {
   DiagrammeR::grViz(img.d)
