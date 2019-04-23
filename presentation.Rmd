@@ -275,7 +275,7 @@ output:
 # https://mikeyharper.uk/flowcharts-in-r-using-diagrammer/
 img.d<-"digraph {
 
-graph [layout = dot, rankdir = LR]
+graph [layout = dot, rankdir = LR, bgcolor=transparent]
 
 # define the global styles of the nodes. We can override these in box if we wish
 node [shape = rectangle, style = filled, fillcolor = Linen]
