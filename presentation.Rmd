@@ -16,7 +16,7 @@ output:
 
 ## Using the `tikz` engine (1)
 
-```{r funky-tikz, engine = "tikz", fig.cap = "Funky tikz", fig.ext = if (knitr:::is_latex_output()) 'pdf' else 'svg', fig.width=4, echo=FALSE, cache=TRUE}
+```{r funky-tikz, engine = "tikz", fig.cap = NULL, fig.env = "@empty", fig.ext = if (knitr:::is_latex_output()) 'pdf' else 'svg', fig.width=4, echo=FALSE, cache=TRUE}
 \usetikzlibrary{arrows}
 \begin{tikzpicture}[node distance=2cm, auto,>=latex', thick, scale = 0.5]
 \node (P) {$P$};
@@ -36,7 +36,7 @@ output:
 
 ## Using the `tikz` engine (2)
 
-```{r seismic-focal-mechanism, engine = "tikz", fig.cap = "Seismic focal mechanism in 3D view", fig.ext = if (knitr:::is_latex_output()) 'pdf' else 'svg', fig.width=5, echo=FALSE, cache=TRUE}
+```{r seismic-focal-mechanism, engine = "tikz", fig.cap = NULL, fig.env = "@empty", fig.ext = if (knitr:::is_latex_output()) 'pdf' else 'svg', fig.width=5, echo=FALSE, cache=TRUE}
 %: see http://www.texample.net/tikz/examples/seismic-focal-mechanism-in-3d-view/
 %% helper macros
 %: Styles for XYZ-Coordinate Systems
@@ -136,7 +136,7 @@ output:
 
 ## Using `tikzDevice`
 
-```{r,engine='tikz', fig.cap="TeXtronics oscilloscope", fig.ext = if (knitr:::is_latex_output()) 'pdf' else 'svg', fig.width=10, echo=FALSE, cache=TRUE}
+```{r,engine='tikz', fig.cap = NULL, fig.env = "@empty", fig.ext = if (knitr:::is_latex_output()) 'pdf' else 'svg', fig.width=10, echo=FALSE, cache=TRUE}
 %: see http://www.texample.net/tikz/examples/textronics-oscilloscope/
 \def\scl{0.6}%scaling factor of the picture
 \begin{tikzpicture}[
@@ -271,7 +271,7 @@ output:
 
 ## DiagrammeR
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.cap = NULL, fig.env = "@empty"}
 # https://mikeyharper.uk/flowcharts-in-r-using-diagrammer/
 img.d<-"digraph {
 
