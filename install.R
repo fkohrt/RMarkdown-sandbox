@@ -5,6 +5,7 @@ install.packages("bitops")
 install.packages("ggplot2")
 install.packages("formatR")
 install.packages("tint")
+install.packages("pagedown")
 
 install.packages("revealjs")
 install.packages("tikzDevice")
