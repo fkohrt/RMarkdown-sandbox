@@ -12,6 +12,9 @@ output:
       showNotes: true
       previewLinks: true
   tint::tintPdf: default
+  pagedown::html_paged: 
+    toc: false
+    number_sections: false
 ---
 
 ## Using the `tikz` engine (1)
